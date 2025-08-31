@@ -20,13 +20,11 @@ This tokenizer is used for pre-training and finetuning the **Lille-140M** model.
 
 Hastings includes the following special tokens mapped to the upper end of the vocabulary range:
 
-| Token             | ID      | Purpose                               |
-| ----------------- | ------- | ------------------------------------- |
-| `<|pad|>`         | `32763` | Padding token for batching sequences. |
-| `<|endoftext|>`   | `32764` | Standard end-of-text marker.          |
-| `<|assistant|>`   | `32765` | Marks the beginning of an AI response.|
-| `<|user|>`        | `32766` | Marks the beginning of a user prompt. |
-| `<|startoftext|>` | `32767` | Marks the start of a conversation.    |
+- **`<|pad|>`** (`32763`): Padding token for batching sequences.
+- **`<|endoftext|>`** (`32764`): Standard end-of-text marker.
+- **`<|assistant|>`** (`32765`): Marks the beginning of an AI response.
+- **`<|user|>`** (`32766`): Marks the beginning of a user prompt.
+- **`<|startoftext|>`** (`32767`): Marks the start of a conversation.
 
 ## 🚀 Usage
 
@@ -92,6 +90,7 @@ Hastings is a key component of my initiative to build and release a complete, tr
 *   **Tokenizer:** **[Hastings](https://github.com/Nikityyy/Hastings)** (this repository) - A modern, efficient tokenizer with a 32k vocabulary.
 *   **Dataset:** **[Kyoto-Corpus](https://github.com/Nikityyy/Kyoto-Corpus)** - A high-quality, small-scale dataset for instruction tuning.
 *   **Model:** **[lille](https://github.com/Nikityyy/lille)** - A powerful 140-million-parameter model trained from scratch using the Hastings tokenizer.
+*   **Optimizer:** **[Sophia-Triton](https://github.com/Nikityyy/Sophia-Triton)** - A memory-efficient, Triton-based implementation of the SophiaG optimizer.
 *   **Evaluations:** **[simple-eval](https://github.com/Nikityyy/simple-eval)** - A straightforward framework for evaluating model performance using an LLM as a Judge.
 
 ---
